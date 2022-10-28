@@ -1,9 +1,9 @@
 <?php
 class Database {
-private $host ="studdb.csc.liv.ac.uk";
-private $user ="sgkvaliy";
-private $passwd ="H@rmonics";
-private $database ="sgkvaliy";
+private $host ="";
+private $user ="";
+private $passwd ="";
+private $database ="";
 public $conn;
 public function __construct() {
 $opt = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
