@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>Interface</title>
+        <script src="https://student.csc.liv.ac.uk/~sgkvaliy/interface.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <link rel="stylesheet" href="interface.css">
+
+    </head>
+    <body>
+        <h1>INTERFACE</h1>
+        <h2>Please read through the documentation below before proceeding with the requests. </h2>
+
+        <form id="form1">
+            <select  name="method" id="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="DELETE">DELETE</option>
+                <option value="PATCH">PATCH</option>
+            </select><br>
+            <input name="resource" id="resource" type="text" size="80"><br>
+            <textarea name="requestBody" id="requestBody" cols="80" rows="5"></textarea><br>
+            <input type="button" onclick="routeRequest()" value="Create Request">
+            <input type="button" onclick="clearResponse()" value="Clear Response">
+
+        </form>
+        <div id="error"></div>
+        <h3>Response Code</h3>
+        <div id="responseCode"></div>
+        <h3>Response Body</h3>
+        <div id="responseBody"></div>
+        <section>
+            <h2><u>Documentation</u> </h2>
+            <P>This session will cover details about all the resources prvided by the web service.</P>
+            <dl>
+                <dt><u>GET</u></dt>
+                <dd>
+                    <ul >
+                        <li><strong><u>team</u></strong> - Resource fetches all the details about the teams present. and the details of the links for getting and maintaining the data of players.</li>
+                        <li><strong><u>team/{teamName}/player</u></strong> - Resource fetches all the details of the player of a particular team.</li>
+                        <li><strong><u>team/{teamName}/player/{playerId}</u> </strong>- Resource fetches the details of a particular player with player id mentioned.</li>
+                    </ul>
+
+                </dd>
+                <dt><u>POST</u></dt>
+                <dd>
+                    <ul>
+                        <li><strong><u>team/{teamName}/player</u></strong>- Resource creates a new player entry in the players table.</li>
+
+
+                    </ul>
+
+                </dd>
+                <dt><u>PATCH</u></dt>
+                <dd>
+                    <ul>
+                        <li><strong><u>team/{teamName}/player/{playerId}</u></strong>- Resource updates the details of a player entry in the players table.</li>
+                        
+
+                    </ul>
+
+                </dd>
+                <dt><u>DELETE</u></dt>
+                <dd>
+                    <ul>
+                        <li><strong><u> team/{teamName}/player/{playerId}</u></strong>- Resource deletes the details of a player entry in the players table.</li>
+                        
+
+                    </ul>
+
+                </dd>
+            </dl>
+            <strong>the avaliable teams are:- india,UK and US</strong>
+        </section>
+        <section>
+            <h2><u>Example JSON format for POST and PATCH requests.</u></h2>
+            <code>
+                {
+                    "surname":"james",
+                    "givenName":"mathew",
+                    "nationality":"UK",
+                    "dob":"2000-01-22",
+                    "teamName":"UK"
+                }
+            </code>
+        </section>
+        
+    </body>
+</html>

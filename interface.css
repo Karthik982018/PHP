@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+    background-color: rgb(159, 197, 197);
+    
+}
+input{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 2px rgb(134, 141, 231);
+    
+}
+
+select{
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 2px rgb(134, 141, 231);
+
+
+}
+textarea{
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 2px rgb(134, 141, 231);
+
+
+
+}
+#responseCode{
+    height: auto;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: solid 2px rgb(134, 141, 231);
+    border-radius: 20px;
+    margin-bottom: 10px
+}
+#responseBody{
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: solid 2px rgb(134, 141, 231);
+    border-radius: 20px;
+
+}
+#error{
+    font-size: larger;
+    font-weight: bolder;
+    color: red;
+    margin-bottom: 10px;
+
+}
+section{
+    text-align: left;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 100%;
+
+
+}
+h1{
+    color:rgb(12, 58, 59);
+
+}
+@media (max-width: 700px) {
+
+    textarea{
+
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    
+    
+    
+    }
+    input{
+        width: 100%;
+    }
+    select{
+        width: 100%;
+
+    }
+    
+
+  }
+

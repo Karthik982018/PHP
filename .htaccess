@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^([a-z].*)$ REST.php?resource=$1 [QSA]
